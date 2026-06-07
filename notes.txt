@@ -1,0 +1,39 @@
+
+src/app/sign-in/[[...sign-in]]
+   [[...sign-in]]  =  catch-all route with an optional parameter
+   /sign-in/email/callback → { signIn: ['email', 'callback'] }
+
+globals.css file - deepseek
+font in layout
+next-themes for managing theme state, shadcn for ui 
+
+npx used for one-time js scripts running, like npm, but not installing the dependencies
+
+id for UserTable is coming from clerk
+
+port forwarding for clerk
+
+why is onboarding not being forced after signIn?
+
+see at what all places user is being checked
+
+zod for JobInfoForm
+
+
+------------------ DOUBTS ------------------
+shadcn
+hydration warning problem in next in layout
+difference between undefined and null usage
+mono repo, use client, use server
+
+=====
+
+middleware authenitication of routes
+t3oss env use
+one many relations in the schemas, schemaHelpers
+
+uuid, varchar
+whole drizzle linking to docker
+caching logic
+
+use server, use client, use cache

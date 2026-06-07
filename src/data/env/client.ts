@@ -1,0 +1,19 @@
+import { createEnv } from "@t3-oss/env-core";
+import z from "zod";
+
+export const env = createEnv({
+   client: {
+      NEXT_PUBLIC_CLERK_SIGN_IN_URL: z.string().min(1),
+      NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL: z.string().min(1),
+      NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL: z.string().min(1),
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1),
+   },
+   clientPrefix: "NEXT_PUBLIC_",
+   emptyStringAsUndefined: true,
+   runtimeEnv: {
+      NEXT_PUBLIC_CLERK_SIGN_IN_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL,
+      NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL,
+      NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL,
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
+   },
+})
