@@ -1,0 +1,84 @@
+
+
+t3oss library
+
+src/app/sign-in/[[...sign-in]]
+   [[...sign-in]]  =  catch-all route with an optional parameter
+   /sign-in/email/callback → { signIn: ['email', 'callback'] }
+
+async functions return Promises, and await unwraps Promises.
+
+globals.css file - deepseek
+font in layout
+next-themes for managing theme state, shadcn for ui 
+
+npx used for one-time js scripts running, like npm, but not installing the dependencies
+
+id for UserTable is coming from clerk
+
+port forwarding for clerk
+
+why is onboarding not being forced after signIn?
+
+see at what all places user is being checked
+
+zod for JobInfoForm
+
+JobInfo Details page--
+passing the jobinfoid and using await params, does it happen in all places
+
+used the local built Type in condensedChatMessages.ts
+
+"use server", Next.js automatically creates a hidden HTTP POST endpoint
+
+asChild helps - allows you to "pass down" the functionality of a parent component (such as accessibility attributes or event handlers) to its child element, enabling flexible customization of the rendered
+
+.reduce() = javascript function for accumulating results from previous iterations
+   array.reduce((accumulator, currentValue, currentIndex, array) => {
+      // Logic to update and return the accumulator
+   }, initialValue);
+
+.bind()
+
+satisfies never
+
+useCompletion - This is a custom hook from the @ai-sdk/react library that handles AI completions
+
+the orientation in D:\WebD Projects\Projects\ai-powered-job-prep\src\app\app\job-infos\[jobInfoId]\questions\_NewQuestionClientPage.tsx
+   changed from direction to orientation
+
+related table is populated using with option
+React Hooks
+   useEffect, useState, useMemo, useRef
+
+
+
+
+
+---------------------------------------
+
+deploy - how to do with docker
+port forwarding - issue wile deploying
+
+
+
+------------------ DOUBTS ------------------
+shadcn
+hydration warning problem in next in layout
+difference between undefined and null usage
+mono repo, use client, use server
+
+=====
+
+middleware authenitication of routes
+t3oss env use
+one many relations in the schemas, schemaHelpers
+
+uuid, varchar
+whole drizzle linking to docker
+caching logic
+
+// use server, use client, use cache
+
+
+
