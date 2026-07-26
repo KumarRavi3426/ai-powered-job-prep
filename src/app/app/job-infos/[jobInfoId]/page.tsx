@@ -120,7 +120,10 @@ export default async function JobInfoPage({
                   <CardDescription>{option.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ArrowRightIcon className="size-6" />
+                  <ArrowRightIcon
+                    className="size-6"
+                    suppressHydrationWarning={true}
+                  />
                 </CardContent>
               </Card>
             </Link>

@@ -38,7 +38,10 @@ function Navbar() {
       <div className="container">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
-            <BrainCircuitIcon className="size-8 text-primary" />
+            <BrainCircuitIcon
+              className="size-8 text-primary"
+              suppressHydrationWarning
+            />
             <h1 className="text-2xl font-bold text-foreground">Landr</h1>
           </div>
           <Suspense
@@ -132,7 +135,10 @@ function Features() {
             >
               <CardHeader className="pb-4">
                 <div className="w-16 h-16 mb-4 bg-primary/10 flex items-center justify-center rounded-lg">
-                  <feature.Icon className="w-8 h-8 text-primary" />
+                  <feature.Icon
+                    className="w-8 h-8 text-primary"
+                    suppressHydrationWarning
+                  />
                 </div>
                 <CardTitle className="text-2xl font-bold text-card-foreground">
                   {feature.title}
@@ -172,7 +178,10 @@ function DetailedFeatures() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <SpeechIcon className="w-6 h-6 text-primary" />
+                  <SpeechIcon
+                    className="w-6 h-6 text-primary"
+                    suppressHydrationWarning
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-foreground">
                   AI Interview Practice
@@ -207,7 +216,10 @@ function DetailedFeatures() {
               <div className="bg-muted/50 rounded-lg p-4 mb-4">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Brain className="w-4 h-4 text-primary" />
+                    <Brain
+                      className="w-4 h-4 text-primary"
+                      suppressHydrationWarning
+                    />
                   </div>
                   <span className="text-sm font-medium text-foreground">
                     AI Interviewer
@@ -248,7 +260,10 @@ function DetailedFeatures() {
             <div className="lg:order-2">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <FileSlidersIcon className="w-6 h-6 text-primary" />
+                  <FileSlidersIcon
+                    className="w-6 h-6 text-primary"
+                    suppressHydrationWarning
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-foreground">
                   Smart Resume Analysis
@@ -329,7 +344,10 @@ function DetailedFeatures() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <BookOpenCheckIcon className="w-6 h-6 text-primary" />
+                  <BookOpenCheckIcon
+                    className="w-6 h-6 text-primary"
+                    suppressHydrationWarning
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-foreground">
                   Technical Interview Prep

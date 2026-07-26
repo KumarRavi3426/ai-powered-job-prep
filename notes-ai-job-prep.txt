@@ -59,6 +59,12 @@ React Hooks
 
 deploy - how to do with docker
 port forwarding - issue wile deploying
+   used so that clerk send to our localhost
+   turn on vpn
+   forward and copy url into clerk
+   set forwarded port to public
+   go to that port url and allow
+   copy signing secret
 
 
 

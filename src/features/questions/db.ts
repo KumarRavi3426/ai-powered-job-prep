@@ -13,7 +13,7 @@ export async function insertQuestion(
       jobInfoId: QuestionTable.jobInfoId,
     });
 
-  revalidateQuestionCache({
+  await revalidateQuestionCache({
     id: newQuestion.id,
     jobInfoId: newQuestion.jobInfoId,
   });

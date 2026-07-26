@@ -21,9 +21,9 @@ export function revalidateJobInfoCache({
   userId: string;
 }) {
   // @ts-ignore
-  revalidateTag(getJobInfoGlobalTag());
+  revalidateTag(getJobInfoGlobalTag(), "max");
   // @ts-ignore
-  revalidateTag(getJobInfoUserTag(userId));
+  revalidateTag(getJobInfoUserTag(userId), "max");
   // @ts-ignore
-  revalidateTag(getJobInfoIdTag(id));
+  revalidateTag(getJobInfoIdTag(id), "max");
 }

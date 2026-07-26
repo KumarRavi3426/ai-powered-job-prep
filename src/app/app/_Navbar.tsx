@@ -36,7 +36,10 @@ export function Navbar({ user }: { user: { name: string; imageUrl: string } }) {
     <nav className="h-header border-b">
       <div className="container flex h-full items-center justify-between">
         <Link href="/app" className="flex items-center gap-2">
-          <BrainCircuitIcon className="size-8 text-primary" />
+          <BrainCircuitIcon
+            className="size-8 text-primary"
+            suppressHydrationWarning
+          />
           <span className="text-xl font-bold">Landr</span>
         </Link>
 
@@ -53,7 +56,7 @@ export function Navbar({ user }: { user: { name: string; imageUrl: string } }) {
                   className="cursor-pointer max-sm:hidden"
                 >
                   <Link href={hrefPath}>
-                    <Icon />
+                    <Icon suppressHydrationWarning />
                     {name}
                   </Link>
                 </Button>
@@ -68,12 +71,12 @@ export function Navbar({ user }: { user: { name: string; imageUrl: string } }) {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuItem onClick={() => openUserProfile()}>
-                <User className="mr-2" />
+                <User className="mr-2" suppressHydrationWarning />
                 Profile
               </DropdownMenuItem>
               <SignOutButton>
                 <DropdownMenuItem>
-                  <LogOut className="mr-2" />
+                  <LogOut className="mr-2" suppressHydrationWarning />
                   Logout
                 </DropdownMenuItem>
               </SignOutButton>

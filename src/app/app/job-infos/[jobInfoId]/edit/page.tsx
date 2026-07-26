@@ -28,7 +28,12 @@ export default async function JobInfoNewPage({
       <Card>
         <CardContent>
           <Suspense
-            fallback={<Loader2 className="size-24 animate-spin mx-auto" />}
+            fallback={
+              <Loader2
+                className="size-24 animate-spin mx-auto"
+                suppressHydrationWarning={true}
+              />
+            }
           >
             <SuspendedForm jobInfoId={jobInfoId} />
           </Suspense>

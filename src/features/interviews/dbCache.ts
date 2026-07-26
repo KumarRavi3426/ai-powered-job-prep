@@ -20,10 +20,7 @@ export function revalidateInterviewCache({
   id: string;
   jobInfoId: string;
 }) {
-  // @ts-ignore
-  revalidateTag(getInterviewGlobalTag());
-  // @ts-ignore
-  revalidateTag(getInterviewJobInfoTag(jobInfoId));
-  // @ts-ignore
-  revalidateTag(getInterviewIdTag(id));
+  revalidateTag(getInterviewGlobalTag(), "max");
+  revalidateTag(getInterviewJobInfoTag(jobInfoId), "max");
+  revalidateTag(getInterviewIdTag(id), "max");
 }

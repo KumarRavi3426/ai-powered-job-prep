@@ -24,7 +24,10 @@ export default function AppPage() {
     <Suspense
       fallback={
         <div className="h-screen-header flex items-center justify-center">
-          <Loader2Icon className="size-24 animate-spin" />
+          <Loader2Icon
+            className="size-24 animate-spin"
+            suppressHydrationWarning={true}
+          />
         </div>
       }
     >
@@ -50,7 +53,7 @@ async function JobInfos() {
         </h1>
         <Button asChild>
           <Link href="/app/job-infos/new">
-            <PlusIcon />
+            <PlusIcon suppressHydrationWarning={true} />
             Create Job Description
           </Link>
         </Button>
@@ -81,7 +84,10 @@ async function JobInfos() {
                   </CardFooter>
                 </div>
                 <CardContent>
-                  <ArrowRightIcon className="size-6" />
+                  <ArrowRightIcon
+                    className="size-6"
+                    suppressHydrationWarning={true}
+                  />
                 </CardContent>
               </div>
             </Card>
@@ -90,7 +96,7 @@ async function JobInfos() {
         <Link className="transition-opacity" href="/app/job-infos/new">
           <Card className="h-full flex items-center justify-center border-dashed border-3 bg-transparent hover:border-primary/50 transition-colors shadow-none">
             <div className="text-lg flex items-center gap-2">
-              <PlusIcon className="size-6" />
+              <PlusIcon className="size-6" suppressHydrationWarning={true} />
               New Job Description
             </div>
           </Card>

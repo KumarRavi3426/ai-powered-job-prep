@@ -11,7 +11,7 @@ export function getUserIdTag(id: string) {
 
 export function revalidateUserCache(id: string) {
   // @ts-ignore: Next.js revalidateTag typings may differ; ignore to allow runtime call
-  revalidateTag(getUserGlobalTag());
+  revalidateTag(getUserGlobalTag(), "max");
   // @ts-ignore: Next.js revalidateTag typings may differ; ignore to allow runtime call
-  revalidateTag(getUserIdTag(id));
+  revalidateTag(getUserIdTag(id), "max");
 }
